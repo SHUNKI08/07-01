@@ -12,8 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function() {
-    return view('index');
-});
 
-Route::get('/posts', 'PostController@index');
+
+Route::get('/', 'PostController@index');
+// /postsにGETリクエストが来たらPostControllerのindexメソッドを実行する。
